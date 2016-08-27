@@ -1,0 +1,92 @@
+
+
+
+before you build start to remove the platforms then add them again to upload the images automaticaly
+
+
+
+The only way to do it without loading a new page is with Javascript. You can hide one element and show another when the link is clicked. You should read the Javascript tutorial, 
+it is simple to add a click event listener and change the style.display property of an element.
+========================================================
+
+icons all sizes
+http://www.gieson.com/Library/projects/utilities/icon_slayer/#.V7xM9Jh96hc
+
+vector images
+http://vectormagic.com/
+========================================================
+
+
+image->mode>rgb
+select -> Edit -> stroke selection -> solid color, line width =3
+writ the Surah name -> make it bold and color is black
+
+open the verse in quran.com and make zoom to 175%
+
+example of a side bar:
+http://qnimate.com/creating-a-sidebar-menu/#prettyPhoto
+
+========================================================
+
+mp3 files
+
+http://www.everyayah.com/
+
+small mp3
+http://www.mp3smaller.com/
+
+========================================================
+
+explain:
+http://qurancomplex.gov.sa/
+
+========================================================
+
+don't use ratchet to allow the scroll to work
+
+========================================================
+
+for ios:
+important notes for ios:  https://developer.apple.com/design/tips/
+use StatusBar.overlaysWebView(false);    to overlay the tatus bar
+
+========================================================
+
+for android:
+use StatusBar.hide();
+
+========================================================
+css country flags:
+https://www.flag-sprites.com/en_US/
+https://github.com/lipis/flag-icon-css
+
+web fonts:
+https://www.youtube.com/watch?v=IhH3YrKx0bA
+
+KFGQPC Uthmanic Script HAFS
+
+UthmanicHafs1 Ver09.otf
+
+when adding new css for buttons :
+put the whole folder in same path with index.html (e.g a folder called font-awesome-4.6.3 is located in the same path as index.html)
+
+========================================================
+
+
+
+https://github.com/quran
+
+download
+http://globalquran.com/download/
+
+========================================================
+
+http://fontface.me/
+
+========================================================
+http://www.hodaalquran.com/
+الخيل
+03-14	08-60
+
+العنكبوت
+29-41

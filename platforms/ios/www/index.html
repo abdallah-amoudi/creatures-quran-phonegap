@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CQ</title>
+    <meta http-equiv="Content-Security-Policy" content="style-src 'self' 'unsafe-inline'; media-src *" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, width=device-width, height=device-height" />
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <!--<link rel="stylesheet" href="css/ratchet.css"/>-->
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <!--
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    -->
+
+    <!--
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    -->
+
+    <script src="cordova.js"></script>
+    <!--<script src="js/ratchet.js"></script>-->
+    <script src="js/zepto.js"></script>
+    <script src="js/statusbar.js"></script>
+    <!--
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+-->
+</head>
+
+<body ontouchstart="">
+
+    <div data-role="page" id="pageone">
+        <div class="w3-container w3-teal">
+            <span class="w3-opennav w3-xlarge" onclick="w3_open()" id="openNav">&#9776;</span>
+        </div>
+    </div>
+
+    <nav class="w3-sidenav w3-white w3-card-2" style="display:none" id="mySidenav">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-large">Close &times;</a>
+        <a onclick="document.getElementById('infoModal').style.display='block'" href="#"><i class="fa fa-info-circle"></i></a>
+    </nav>
+
+    <div id="main">
+
+        <div class="w3-row-padding w3-margin-top">
+            <div class="w3-third" style="width:33%">
+                <div class="w3-card-2">
+                    <img src="img/horse.jpg" style="width:100%;" onclick="openModal('horse')">
+                    <div class="w3-container">
+                        <h4></h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third" style="width:33%">
+                <div class="w3-card-2">
+                    <img src="img/spider.jpg" style="width:100%" onclick="openModal('spider')">
+                    <div class="w3-container">
+                        <h4></h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third" style="width:33%">
+                <div class="w3-card-2">
+                    <img src="img/crow.jpg" style="width:100%" onclick="openModal('crow')">
+                    <div class="w3-container">
+                        <h4></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="w3-row-padding w3-margin-top">
+            <div class="w3-third" style="width:33%">
+                <div class="w3-card-2">
+                    <img src="img/lice.jpg" style="width:100%" onclick="openModal('lice')">
+                    <div class="w3-container">
+                        <h4></h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third" style="width:33%">
+                <div class="w3-card-2">
+                    <img src="img/calf.jpg" style="width:100%" onclick="openModal('calf')">
+                    <div class="w3-container">
+                        <h4></h4>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="w3-third" style="width:33%">
+                <div class="w3-card-2">
+                    <img src="img/hoopoe.jpg" style="width:100%" onclick="openModal('hoopoe')">
+                    <div class="w3-container">
+                        <h4></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-margin-top">
+            <div class="w3-third" style="width:33%">
+                <div class="w3-card-2">
+                    <img src="img/elephant.jpg" style="width:100%" onclick="openModal('elephant')">
+                    <div class="w3-container">
+                        <h4></h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third" style="width:33%">
+                <div class="w3-card-2">
+                    <img src="img/bee.jpg" style="width:100%" onclick="openModal('bee')">
+                    <div class="w3-container">
+                        <h4></h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third" style="width:33%">
+                <div class="w3-card-2">
+                    <img src="img/ant.jpg" style="width:100%" onclick="openModal('ant')">
+                    <div class="w3-container">
+                        <h4></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-margin-top">
+            <div class="w3-third" style="width:33%">
+                <div class="w3-card-2">
+                    <img src="img/lion.jpg" style="width:100%" onclick="openModal('lion')">
+                    <div class="w3-container">
+                        <h4></h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third" style="width:33%">
+                <div class="w3-card-2">
+                    <img src="img/wolf.jpg" style="width:100%" onclick="openModal('wolf')">
+                    <div class="w3-container">
+                        <h4></h4>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="w3-third" style="width:33%">
+                <div class="w3-card-2">
+                    <img src="img/camel.jpg" style="width:100%" onclick="openModal('camel')">
+                    <div class="w3-container">
+                        <h4></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-margin-top">
+            <div class="w3-third" style="width:33%">
+                <div class="w3-card-2">
+                    <img src="img/snake.jpg" style="width:100%" onclick="openModal('snake')">
+                    <div class="w3-container">
+                        <h4></h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third" style="width:33%">
+                <div class="w3-card-2">
+                    <img src="img/mosquito.jpg" style="width:100%" onclick="openModal('mosquito')">
+                    <div class="w3-container">
+                        <h4></h4>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="w3-third" style="width:33%">
+                <div class="w3-card-2">
+                    <img src="img/dog.jpg" style="width:100%" onclick="openModal('dog')">
+                    <div class="w3-container">
+                        <h4></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-margin-top">
+            <div class="w3-third" style="width:33%">
+                <div class="w3-card-2">
+                    <img src="img/fly.jpg" style="width:100%" onclick="openModal('fly')">
+                    <div class="w3-container">
+                        <h4></h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third" style="width:33%">
+                <div class="w3-card-2">
+                    <img src="img/cow.jpg" style="width:100%" onclick="openModal('cow')">
+                    <div class="w3-container">
+                        <h4></h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third" style="width:33%">
+                <div class="w3-card-2">
+                    <img src="img/swine.jpg" style="width:100%" onclick="openModal('swine')">
+                    <div class="w3-container">
+                        <h4></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Horse-->
+        <div id="horse" class="w3-modal">
+            <script src="js/horse.js"></script>
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                <header class="w3-container w3-blue">
+                    <span onclick="document.getElementById('horse').style.display='none'" class="w3-closebtn w3-padding-top">&times;</span>
+
+                </header>
+
+                <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%;">
+                    <li><a href="#" class="tablink horse" onclick="openCity(event, 'horseAya')"><i class="fa fa-file-picture-o"></i></a></li>
+                    <li><a href="#" class="tablink horse" onclick="openCity(event, 'horseDesc')"><i class="fa fa-align-justify"></i></a></li>
+                    <li><a href="#" class="tablink horse" onclick="openCity(event, 'horseAya2')"><i class="fa fa-file-picture-o"></i></a></li>
+                    <li><a href="#" class="tablink horse" onclick="openCity(event, 'horseDesc2')"><i class="fa fa-align-justify"></i></a></li>
+                </ul>
+
+                <div id="horseAya" class="w3-container city">
+                    <img src="img/horse.jpg" style="width:100%;">
+                    <img src="img/8_60.png" style="width:100%;">
+                    <div style="text-align:center">
+                        <button id="horsePlay" class="w3-btn w3-blue"><i class="fa fa-play"></i></button>
+                        <button id="horsePause" class="w3-btn w3-blue"><i class="fa fa-pause"></i></button>
+                        <button id="horseStop" class="w3-btn w3-blue"><i class="fa fa-stop"></i></button>
+                    </div>
+                </div>
+
+                <div id="horseDesc" class="w3-container city">
+                    <h3 class="arabic-title">التفسير الميسر</h3>
+                    <p class="arabic-translation">وأعدُّوا - يا معشر المسلمين - لمواجهة أعدائكم كل ما تقدرون عليه مِن عدد وعدة, لتُدْخلوا بذلك الرهبة في قلوب أعداء الله وأعدائكم المتربصين بكم, وتخيفوا آخرين لا تظهر لكم عداوتهم الآن, لكن الله يعلمهم ويعلم ما يضمرونه. وما تبذلوا من مال وغيره في سبيل الله قليلا أو كثيرًا يخلفه الله عليكم في الدنيا, ويدخر لكم ثوابه إلى يوم القيامة, وأنتم لا تُنْقصون من أجر ذلك شيئًا.</p>
+                    <h3 class="foreign-title">English</h3>
+                    <p>And make ready against them all you can of power, including steeds of war (tanks, planes, missiles, artillery) to threaten the enemy of Allâh and your enemy, and others besides whom, you may not know but whom Allâh does know. And whatever you shall spend in the Cause of Allâh shall be repaid unto you, and you shall not be treated unjustly.</p>
+                    <h3 class="foreign-title">Indonesian</h3>
+                    <p>Dan siapkanlah untuk menghadapi mereka kekuatan apa saja yang kamu sanggupi dan dari kuda-kuda yang ditambat untuk berperang (yang dengan persiapan itu) kamu menggentarkan musuh Allah, musuhmu dan orang-orang selain mereka yang kamu tidak mengetahuinya; sedang Allah mengetahuinya. Apa saja yang kamu nafkahkan pada jalan Allah niscaya akan dibalas dengan cukup kepadamu dan kamu tidak akan dianiaya (dirugikan). </p>
+                </div>
+
+                <div id="horseAya2" class="w3-container city">
+                    <img src="img/horse2.jpg" style="width:100%;">
+                    <img src="img/16_8.png" style="width:100%;">
+                    <div style="text-align:center">
+                        <button id="horsePlay2" class="w3-btn w3-blue"><i class="fa fa-play"></i></button>
+                        <button id="horsePause2" class="w3-btn w3-blue"><i class="fa fa-pause"></i></button>
+                        <button id="horseStop2" class="w3-btn w3-blue"><i class="fa fa-stop"></i></button>
+                    </div>
+                </div>
+
+                <div id="horseDesc2" class="w3-container city">
+                    <h3 class="arabic-title">التفسير الميسر</h3>
+                    <p class="arabic-translation">وخلق لكم الخيل والبغال والحمير; لكي تركبوها, ولتكون جمَالا لكم ومنظرًا حسنًا; ويخلق لكم من وسائل الركوب وغيرها ما لا عِلْمَ لكم به; لتزدادوا إيمانًا به وشكرا له</p>
+                    <h3 class="foreign-title">English</h3>
+                    <p>And (He has created) horses, mules and donkeys, for you to ride and as an adornment. And He creates (other) things of which you have no knowledge</p>
+                    <h3 class="foreign-title">Indonesian</h3>
+                    <p>dan (Dia telah menciptakan) kuda, bagal <sub>(1)</sub> dan keledai, agar kamu menungganginya dan (menjadikannya) perhiasan. Dan Allah menciptakan apa yang kamu tidak mengetahuinya</p>
+                    <p>(1) Bagal yaitu peranakan kuda dengan keledai</p>
+                </div>
+
+
+
+                <div class="w3-container w3-light-grey w3-padding">
+                    <button class="w3-btn w3-right w3-white w3-border" onclick="document.getElementById('horse').style.display='none'">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Spider 029041-->
+        <div id="spider" class="w3-modal">
+            <script src="js/media.js"></script>
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                <header class="w3-container w3-blue">
+                    <span onclick="document.getElementById('spider').style.display='none'" class="w3-closebtn w3-padding-top">&times;</span>
+
+                </header>
+
+                <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%;">
+                    <li><a href="#" class="tablink spider" onclick="openCity(event, 'spiderAya')"><i class="fa fa-file-picture-o"></i></a></li>
+                    <li><a href="#" class="tablink spider" onclick="openCity(event, 'spiderDesc')"><i class="fa fa-align-justify"></i></a></li>
+                </ul>
+
+                <div id="spiderAya" class="w3-container city">
+                    <img src="img/spider.jpg" style="width:100%;">
+                    <img src="img/29_41.png" style="width:100%;">
+                </div>
+
+                <div id="spiderDesc" class="w3-container city">
+                    <h3 class="arabic-title">التفسير الميسر</h3>
+                    <p class="arabic-translation">مثل الذين جعلوا الأوثان من دون الله أولياء يرجون نصرها, كمثل العنكبوت التي عملت بيتًا لنفسها ليحفظها, فلم يُغن عنها شيئًا عند حاجتها إليه, فكذلك هؤلاء المشركون لم يُغْن عنهم أولياؤهم الذين اتخذوهم من دون الله شيئًا, وإن أضعف البيوت لَبيت العنكبوت, لو كانوا يعلمون ذلك ما اتخذوهم أولياء, فهم لا ينفعونهم ولا يضرونهم</p>
+                    <h3 class="foreign-title">English</h3>
+                    <p>The likeness of those who take (false deities as) Auliyâ’ (protectors, helpers) other than Allâh is the likeness of a spider who builds (for itself) a house; but verily, the frailest (weakest) of houses is the spider’s house - if they but knew</p>
+                    <h3 class="foreign-title">Indonesian</h3>
+                    <p>Perumpamaan orang-orang yang mengambil pelindung-pelindung selain Allah adalah seperti laba-laba yang membuat rumah. Dan sesungguhnya rumah yang paling lemah ialah rumah laba-laba kalau mereka mengetahui</p>
+                </div>
+
+                <div class="w3-container w3-light-grey w3-padding">
+                    <button class="w3-btn w3-right w3-white w3-border" onclick="document.getElementById('spider').style.display='none'">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Crow 005031-->
+        <div id="crow" class="w3-modal">
+            <script src="js/media.js"></script>
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                <header class="w3-container w3-blue">
+                    <span onclick="document.getElementById('crow').style.display='none'" class="w3-closebtn w3-padding-top">&times;</span>
+
+                </header>
+
+                <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%;">
+                    <li><a href="#" class="tablink crow" onclick="openCity(event, 'crowAya')"><i class="fa fa-file-picture-o"></i></a></li>
+                    <li><a href="#" class="tablink crow" onclick="openCity(event, 'crowDesc')"><i class="fa fa-align-justify"></i></a></li>
+                </ul>
+
+                <div id="crowAya" class="w3-container city">
+                    <img src="img/crow.jpg" style="width:100%;">
+                    <img src="img/5_31.png" style="width:100%;">
+                </div>
+
+                <div id="crowDesc" class="w3-container city">
+                    <h3 class="arabic-title">التفسير الميسر</h3>
+                    <p class="arabic-translation">لما قتل قابيلُ أخاه لم يعرف ما يصنع بجسده, فأرسل الله غرابًا يحفر حفرةً في الأرض ليدفن فيها غرابًا مَيِّتًا; ليدل قابيل كيف يدفن جُثمان أخيه؟ فتعجَّب قابيل, وقال: أعجزتُ أن أصنع مثل صنيع هذا الغراب فأستُرَ عورة أخي؟ فدَفَنَ قابيل أخاه, فعاقبه الله بالندامة بعد أن رجع بالخسران</p>
+                    <h3 class="foreign-title">English</h3>
+                    <p>Then Allâh sent a crow who scratched the ground to show him to hide the dead body of his brother. He (the murderer) said: "Woe to me! Am I not even able to be as this crow and to hide the dead body of my brother?" Then he became one of those who regretted</p>
+                    <h3 class="foreign-title">Indonesian</h3>
+                    <p>Kemudian Allah menyuruh seekor burung gagak menggali-gali di bumi untuk memperlihatkan kepadanya (Kabil) bagaimana dia seharusnya menguburkan mayat saudaranya <sub>(1)</sub>. Berkata Qabil: "Aduhai celaka aku, mengapa aku tidak mampu berbuat seperti burung gagak ini, lalu aku dapat menguburkan mayat saudaraku ini?" Karena itu jadilah dia seorang di antara orang-orang yang menyesal</p>
+                    <p>(1) Dipahami dari ayat ini bahwa manusia banyak pula mengambil pelajaran dari alam dan jangan segan-segan mengambil pelajaran dari yang lebih rendah tingkatan pengetahuannya</p>
+                </div>
+
+                <div class="w3-container w3-light-grey w3-padding">
+                    <button class="w3-btn w3-right w3-white w3-border" onclick="document.getElementById('crow').style.display='none'">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Lice 007133-->
+        <div id="lice" class="w3-modal">
+            <script src="js/media.js"></script>
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                <header class="w3-container w3-blue">
+                    <span onclick="document.getElementById('lice').style.display='none'" class="w3-closebtn w3-padding-top">&times;</span>
+
+                </header>
+
+                <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%;">
+                    <li><a href="#" class="tablink lice" onclick="openCity(event, 'liceAya')"><i class="fa fa-file-picture-o"></i></a></li>
+                    <li><a href="#" class="tablink lice" onclick="openCity(event, 'liceDesc')"><i class="fa fa-align-justify"></i></a></li>
+                </ul>
+
+                <div id="liceAya" class="w3-container city">
+                    <img src="img/lice.jpg" style="width:100%;">
+                    <img src="img/7_133.png" style="width:100%;">
+                </div>
+
+                <div id="liceDesc" class="w3-container city">
+                    <h3 class="arabic-title">التفسير الميسر</h3>
+                    <p class="arabic-translation">فأرسلنا عليهم سيلا جارفًا أغرق الزروع والثمار, وأرسلنا الجراد, فأكل زروعهم وثمارهم وأبوابهم وسقوفهم وثيابهم, وأرسلنا القُمَّل الذي يفسد الثمار ويقضي على الحيوان والنبات, وأرسلنا الضفادع فملأت آنيتهم وأطعمتهم ومضاجعهم, وأرسلنا أيضًا الدم فصارت أنهارهم وآبارهم دمًا, ولم يجدوا ماء صالحًا للشرب, هذه آيات من آيات الله لا يقدر عليها غيره, مفرقات بعضها عن بعض, ومع كل هذا ترفَّع قوم فرعون, فاستكبروا عن الإيمان بالله, وكانوا قومًا يعملون بما ينهى الله عنه من المعاصي والفسق عتوًّا وتمردًا</p>
+                    <h3 class="foreign-title">English</h3>
+                    <p>So We sent on them: the flood, the locusts, the lice, the frogs, and the blood (as a succession of) manifest signs, yet they remained arrogant, and they were of those people who were Mujrimûn (criminals, polytheists, sinners)</p>
+                    <h3 class="foreign-title">Indonesian</h3>
+                    <p>Maka Kami kirimkan kepada mereka taufan, belalang, kutu, katak dan darah <sub>(1)</sub> sebagai bukti yang jelas, tetapi mereka tetap menyombongkan diri dan mereka adalah kaum yang berdosa</p>
+                    <p>(1) Maksudnya: air minum mereka berobah menjadi darah</p>
+                </div>
+
+                <div class="w3-container w3-light-grey w3-padding">
+                    <button class="w3-btn w3-right w3-white w3-border" onclick="document.getElementById('lice').style.display='none'">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Calf 011069  002092-->
+        <div id="calf" class="w3-modal">
+            <script src="js/media.js"></script>
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                <header class="w3-container w3-blue">
+                    <span onclick="document.getElementById('calf').style.display='none'" class="w3-closebtn w3-padding-top">&times;</span>
+
+                </header>
+
+                <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%;">
+                    <li><a href="#" class="tablink calf" onclick="openCity(event, 'calfAya')"><i class="fa fa-file-picture-o"></i></a></li>
+                    <li><a href="#" class="tablink calf" onclick="openCity(event, 'calfDesc')"><i class="fa fa-align-justify"></i></a></li>
+                    <li><a href="#" class="tablink calf" onclick="openCity(event, 'calfAya2')"><i class="fa fa-file-picture-o"></i></a></li>
+                    <li><a href="#" class="tablink calf" onclick="openCity(event, 'calfDesc2')"><i class="fa fa-align-justify"></i></a></li>
+                </ul>
+
+                <div id="calfAya" class="w3-container city">
+                    <img src="img/calf.jpg" style="width:100%;">
+                    <img src="img/11_69.png" style="width:100%;">
+                </div>
+
+                <div id="calfDesc" class="w3-container city">
+                    <h3 class="arabic-title">التفسير الميسر</h3>
+                    <p class="arabic-translation">ولقد جاءت الملائكة إبراهيم يبشرونه هو وزوجته بإسحاق, ويعقوبَ بعده, فقالوا: سلامًا, قال ردًّا على تحيتهم: سلام, فذهب سريعًا وجاءهم بعجل سمين مشويٍّ ليأكلوا منه</p>
+                    <h3 class="foreign-title">English</h3>
+                    <p>And verily, there came Our messengers to Ibrâhîm (Abraham) with glad tidings. They said: Salâm (greetings or peace!) He answered, Salâm (greetings or peace!) and he hastened to entertain them with a roasted calf</p>
+                    <h3 class="foreign-title">Indonesian</h3>
+                    <p>Dan sesungguhnya utusan-utusan Kami (malaikat-malaikat) telah datang kepada Ibrahim dengan membawa kabar gembira, mereka mengucapkan: "Salaman" (Selamat). Ibrahim menjawab: "Salamun" (Selamatlah), maka tidak lama kemudian Ibrahim menyuguhkan daging anak sapi yang dipanggang</p>
+                </div>
+
+                <div id="calfAya2" class="w3-container city">
+                    <img src="img/calf2.jpg" style="width:100%;">
+                    <img src="img/2_92.png" style="width:100%;">
+                </div>
+
+                <div id="calfDesc2" class="w3-container city">
+                    <h3 class="arabic-title">التفسير الميسر</h3>
+                    <p class="arabic-translation">ولقد جاءكم نبي الله موسى بالمعجزات الواضحات الدالة على صدقه, كالطوفان والجراد والقُمَّل والضفادع, وغير ذلك مما ذكره الله في القرآن العظيم, ومع ذلك اتخذتم العجل معبودًا, بعد ذهاب موسى إلى ميقات ربه, وأنتم متجاوزون حدود الله</p>
+                    <h3 class="foreign-title">English</h3>
+                    <p>And indeed Mûsâ (Moses) came to you with clear proofs, yet you worshipped the calf after he left, and you were Zâlimûn (polytheists and wrongdoers)</p>
+                    <h3 class="foreign-title">Indonesian</h3>
+                    <p>Sesungguhnya Musa telah datang kepadamu membawa bukti-bukti kebenaran (mu’jizat), kemudian kamu jadikan anak sapi (sebagai sembahan) sesudah (kepergian)nya <sub>(1)</sub>, dan sebenarnya kamu adalah orang-orang yang zalim</p>
+                    <p>(1) Maksudnya kepergian Musa a.s. ke bukit Thur yang terletak di Sinai, sesudah didatangkan kepadanya mu’jizat-mu’jizat</p>
+                </div>
+
+                <div class="w3-container w3-light-grey w3-padding">
+                    <button class="w3-btn w3-right w3-white w3-border" onclick="document.getElementById('calf').style.display='none'">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Hoopoe 027020-->
+        <div id="hoopoe" class="w3-modal">
+            <script src="js/media.js"></script>
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                <header class="w3-container w3-blue">
+                    <span onclick="document.getElementById('hoopoe').style.display='none'" class="w3-closebtn w3-padding-top">&times;</span>
+
+                </header>
+
+                <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%;">
+                    <li><a href="#" class="tablink hoopoe" onclick="openCity(event, 'hoopoeAya')"><i class="fa fa-file-picture-o"></i></a></li>
+                    <li><a href="#" class="tablink hoopoe" onclick="openCity(event, 'hoopoeDesc')"><i class="fa fa-align-justify"></i></a></li>
+                </ul>
+
+                <div id="hoopoeAya" class="w3-container city">
+                    <img src="img/hoopoe.jpg" style="width:100%;">
+                    <img src="img/27_20.png" style="width:100%;">
+                </div>
+
+                <div id="hoopoeDesc" class="w3-container city">
+                    <h3 class="arabic-title">التفسير الميسر</h3>
+                    <p class="arabic-translation">وتفقد سليمان حال الطير المسخرة له وحال ما غاب منها, وكان عنده هدهد متميز معروف فلم يجده, فقال: ما لي لا أرى الهدهد الذي أعهده؟ أسَتَره ساتر عني, أم أنه كان من الغائبين عني, فلم أره لغيبته؟ فلما ظهر أنه غائب قال: لأعذبنَّ هذا الهدهد عذابًا شديدًا لغيابه تأديبًا له, أو لأذبحنَّه عقوبة على ما فعل حيث أخلَّ بما سُخِّر له, أو ليأتينِّي بحجة ظاهرة, فيها عذر لغيبته</p>
+                    <p class="arabic-translation">فمكث الهدهد زمنًا غير بعيد ثم حضر فعاتبه سليمان على مغيبه وتخلُّفه, فقال له الهدهد: علمت ما لم تعلمه من الأمر على وجه الإحاطة, وجئتك من مدينة "سبأ" بـ "اليمن" بخبر خطير الشأن, وأنا على يقين منه</p>
+                    <p class="arabic-translation">إني وجدت امرأةً تحكم أهل "سبأ", وأوتيت من كل شيء من أسباب الدنيا, ولها سرير عظيم القدر, تجلس عليه لإدارة ملكها</p>
+                    <h3 class="foreign-title">English</h3>
+                    <p>He inspected the birds, and said: "What is the matter that I see not the hoopoe? Or is he among the absentees?</p>
+                    <p>"I will surely punish him with a severe torment, or slaughter him, unless he brings me a clear reason."</p>
+                    <p>But the hoopoe stayed not long: he (came up and) said: "I have grasped (the knowledge of a thing) which you have not grasped and I have come to you from Saba’ (Sheba) with true news</p>
+                    <p>"I found a woman ruling over them: she has been given all things that could be possessed by any ruler of the earth, and she has a great throne</p>
+                    <h3 class="foreign-title">Indonesian</h3>
+                    <p>Dan dia memeriksa burung-burung lalu berkata: "Mengapa aku tidak melihat hud-hud
+                        <sub>(1)</sub>, apakah dia termasuk yang tidak hadir</p>
+                    <p>Sungguh aku benar-benar akan mengazabnya dengan azab yang keras, atau benar-benar menyembelihnya kecuali jika benar-benar dia datang kepadaku dengan alasan yang terang"</p>
+                    <p>Maka tidak lama kemudian (datanglah hud-hud), lalu ia berkata: "Aku telah mengetahui sesuatu yang kamu belum mengetahuinya; dan kubawa kepadamu dari negeri Saba <sub>(2)</sub>, suatu berita penting yang diyakini</p>
+                    <p>(1) Hud-hud: sejenis burung pelatuk</p>
+                    <p>(2) Saba nama kerajaan di zaman dahulu, ibu kotanya Ma’rib yang letaknya dekat kota San’a ibu kota Yaman sekarang</p>
+                </div>
+
+                <div class="w3-container w3-light-grey w3-padding">
+                    <button class="w3-btn w3-right w3-white w3-border" onclick="document.getElementById('hoopoe').style.display='none'">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Bee 016068-->
+        <div id="bee" class="w3-modal">
+            <script src="js/media.js"></script>
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                <header class="w3-container w3-blue">
+                    <span onclick="document.getElementById('bee').style.display='none'" class="w3-closebtn w3-padding-top">&times;</span>
+
+                </header>
+
+                <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%;">
+                    <li><a href="#" class="tablink bee" onclick="openCity(event, 'beeAya')"><i class="fa fa-file-picture-o"></i></a></li>
+                    <li><a href="#" class="tablink bee" onclick="openCity(event, 'beeDesc')"><i class="fa fa-align-justify"></i></a></li>
+                </ul>
+
+                <div id="beeAya" class="w3-container city">
+                    <img src="img/bee.jpg" style="width:100%;">
+                    <img src="img/16_68.png" style="width:100%;">
+                </div>
+
+                <div id="beeDesc" class="w3-container city">
+                    <h3 class="arabic-title">التفسير الميسر</h3>
+                    <p class="arabic-translation">وألْهَمَ ربك -أيها النبي- النحل بأن اجعلي لك بيوتًا في الجبال, وفي الشجر, وفيما يبني الناس من البيوت والسُّقُف</p>
+                    <p class="arabic-translation">ثم كُلي مِن كل ثمرة تشتهينها, فاسلكي طرق ربك مذللة لك; لطلب الرزق في الجبال وخلال الشجر, وقد جعلها سهلة عليكِ, لا تضلي في العَوْد إليها وإن بَعُدَتْ. يخرج من بطون النحل عسل مختلف الألوان مِن بياض وصفرة وحمرة وغير ذلك, فيه شفاء للناس من الأمراض. إن فيما يصنعه النحل لَدلالة قوية على قدرة خالقها لقوم يتفكرون, فيعتبرون</p>
+                    <h3 class="foreign-title">English</h3>
+                    <p>And your Lord inspired the bees, saying: "Take you habitations in the mountains and in the trees and in what they erect</p>
+                    <p>"Then, eat of all fruits, and follow the ways of your Lord made easy (for you)." There comes forth from their bellies, a drink of varying colour wherein is healing for men. Verily, in this is indeed a sign for people who think</p>
+                    <h3 class="foreign-title">Indonesian</h3>
+                    <p>Dan Tuhanmu mengilhamkan kepada lebah: "Buatlah sarang-sarang di bukit-bukit, di pohon-pohon kayu, dan di tempat-tempat yang dibikin manusia"</p>
+                    <p>kemudian makanlah dari tiap-tiap (macam) buah-buahan dan tempuhlah jalan Tuhanmu yang telah dimudahkan (bagimu). Dari perut lebah itu keluar minuman (madu) yang bermacam-macam warnanya, di dalamnya terdapat obat yang menyembuhkan bagi manusia. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda (kebesaran Tuhan) bagi orang-orang yang memikirkan</p>
+                </div>
+
+                <div class="w3-container w3-light-grey w3-padding">
+                    <button class="w3-btn w3-right w3-white w3-border" onclick="document.getElementById('bee').style.display='none'">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Elephant-->
+        <div id="elephant" class="w3-modal">
+            <script src="js/media.js"></script>
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                <header class="w3-container w3-blue">
+                    <span onclick="document.getElementById('elephant').style.display='none'" class="w3-closebtn w3-padding-top">&times;</span>
+
+                </header>
+
+                <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%;">
+                    <li><a href="#" class="tablink elephant" onclick="openCity(event, 'elephantAya')"><i class="fa fa-file-picture-o"></i></a></li>
+                    <li><a href="#" class="tablink elephant" onclick="openCity(event, 'elephantDesc')"><i class="fa fa-align-justify"></i></a></li>
+                </ul>
+
+                <div id="elephantAya" class="w3-container city">
+                    <img src="img/elephant.jpg" style="width:100%;">
+                    <img src="img/105_1.png" style="width:100%;">
+                </div>
+
+                <div id="elephantDesc" class="w3-container city">
+                    <h3 class="arabic-title">التفسير الميسر</h3>
+                    <p class="arabic-translation">ألم تعلم -أيها الرسول- كيف فعل ربك بأصحاب الفيل: أبرهة الحبشي وجيشه الذين أرادوا تدمير الكعبة المباركة؟</p>
+                    <h3 class="foreign-title">English</h3>
+                    <p>Have you (O Muhammad صلى الله عليه وسلم) not seen how your Lord dealt with the owners of the Elephant? [The Elephant army which came from Yemen under the command of Abrahah Al-Ashram intending to destroy the Ka‘bah at Makkah].</p>
+                    <h3 class="foreign-title">Indonesian</h3>
+                    <p>Apakah kamu tidak memperhatikan bagaimana Tuhanmu telah bertindak terhadap tentara bergajah? <sub>(1)</sub></p>
+                    <p>(1) Yang dimaksud dengan tentara bergajah ialah tentara yang dipimpin oleh Abrahah Gubernur Yaman yang hendak menghancurkan Ka’bah. Sebelum masuk ke kota Mekah, tentara tersebut diserang burung-burung yang melemparinya dengan batu-batu kecil sehingga mereka musnah.</p>
+                </div>
+
+                <div class="w3-container w3-light-grey w3-padding">
+                    <button class="w3-btn w3-right w3-white w3-border" onclick="document.getElementById('elephant').style.display='none'">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Ant-->
+        <div id="ant" class="w3-modal">
+            <script src="js/media.js"></script>
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                <header class="w3-container w3-blue">
+                    <span onclick="document.getElementById('ant').style.display='none'" class="w3-closebtn w3-padding-top">&times;</span>
+
+                </header>
+
+                <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%;">
+                    <li><a href="#" class="tablink ant" onclick="openCity(event, 'antAya')"><i class="fa fa-file-picture-o"></i></a></li>
+                    <li><a href="#" class="tablink ant" onclick="openCity(event, 'antDesc')"><i class="fa fa-align-justify"></i></a></li>
+                </ul>
+
+                <div id="antAya" class="w3-container city">
+                    <img src="img/ant.jpg" style="width:100%;">
+                    <img src="img/27_18.png" style="width:100%;">
+                </div>
+
+                <div id="antDesc" class="w3-container city">
+                    <h3 class="arabic-title">التفسير الميسر</h3>
+                    <p class="arabic-translation">حتى إذا بلغوا وادي النمل قالت نملة: يا أيها النمل ادخلوا مساكنكم لا يهلكنَّكم سليمان وجنوده, وهم لا يعلمون بذلك. فتبسم ضاحكًا من قول هذه النملة لفهمها واهتدائها إلى تحذير النمل, واستشعر نعمة الله عليه, فتوجَّه إليه داعيًا: ربِّ ألْهِمْني, ووفقني, أن أشكر نعمتك التي أنعمت عليَّ وعلى والديَّ, وأن أعمل عملا صالحًا ترضاه مني, وأدخلني برحمتك في نعيم جنتك مع عبادك الصالحين الذين ارتضيت أعمالهم</p>
+                    <h3 class="foreign-title">English</h3>
+                    <p>Till, when they came to the valley of the ants, one of the ants said: "O ants! Enter your dwellings, lest Sulaimân (Solomon) and his hosts should crush you, while they perceive not."</p>
+                    <p>So he [Sulaimân (Solomon)] smiled, amused at her speech and said: "My Lord! Grant me the power and ability that I may be grateful for Your Favours which You have bestowed on me and on my parents, and that I may do righteous good deeds that will please You, and admit me by Your Mercy among Your righteous slaves."</p>
+                    <h3 class="foreign-title">Indonesian</h3>
+                    <p>Hingga apabila mereka sampai di lembah semut berkatalah seekor semut: Hai semut-semut, masuklah ke dalam sarang-sarangmu, agar kamu tidak diinjak oleh Sulaiman dan tentaranya, sedangkan mereka tidak menyadari"</p>
+                    <p>maka dia tersenyum dengan tertawa karena (mendengar) perkataan semut itu. Dan dia berdo’a: "Ya Tuhanku, berilah aku ilham untuk tetap mensyukuri ni’mat-Mu yang telah Engkau anugerahkan kepadaku dan kepada dua orang ibu bapakku dan untuk mengerjakan amal saleh yang Engkau ridhai; dan masukkanlah aku dengan rahmat-Mu ke dalam golongan hamba-hamba-Mu yang saleh"</p>
+                </div>
+
+                <div class="w3-container w3-light-grey w3-padding">
+                    <button class="w3-btn w3-right w3-white w3-border" onclick="document.getElementById('ant').style.display='none'">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Lion-->
+        <div id="lion" class="w3-modal">
+            <script src="js/media.js"></script>
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                <header class="w3-container w3-blue">
+                    <span onclick="document.getElementById('lion').style.display='none'" class="w3-closebtn w3-padding-top">&times;</span>
+
+                </header>
+
+                <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%;">
+                    <li><a href="#" class="tablink lion" onclick="openCity(event, 'lionAya')"><i class="fa fa-file-picture-o"></i></a></li>
+                    <li><a href="#" class="tablink lion" onclick="openCity(event, 'lionDesc')"><i class="fa fa-align-justify"></i></a></li>
+                </ul>
+
+                <div id="lionAya" class="w3-container city">
+                    <img src="img/lion.jpg" style="width:100%;">
+                    <img src="img/74_49.png" style="width:100%;">
+                </div>
+
+                <div id="lionDesc" class="w3-container city">
+                    <h3 class="arabic-title">التفسير الميسر</h3>
+                    <p class="arabic-translation">فما لهؤلاء المشركين عن القرآن وما فيه من المواعظ منصرفين؟ كأنهم حمر وحشية شديدة النِّفار, فرَّت من أسد كاسر</p>
+                    <h3 class="foreign-title">English</h3>
+                    <p>Then what is wrong with them (i.e. the polytheists, the disbelievers) that they turn away from (receiving) admonition?</p>
+                    <p>As if they were (frightened) wild donkeys</p>
+                    <p>Fleeing from a hunter, or a lion, or a beast of prey</p>
+                    <h3 class="foreign-title">Indonesian</h3>
+                    <p>Maka mengapa mereka (orang-orang kafir) berpaling dari peringatan (Allah)?"</p>
+                    <p>seakan-akan mereka itu keledai liar yang lari terkejut</p>
+                    <p>lari daripada singa</p>
+                </div>
+
+                <div class="w3-container w3-light-grey w3-padding">
+                    <button class="w3-btn w3-right w3-white w3-border" onclick="document.getElementById('lion').style.display='none'">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Wolf-->
+        <div id="wolf" class="w3-modal">
+            <script src="js/media.js"></script>
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                <header class="w3-container w3-blue">
+                    <span onclick="document.getElementById('wolf').style.display='none'" class="w3-closebtn w3-padding-top">&times;</span>
+
+                </header>
+
+                <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%;">
+                    <li><a href="#" class="tablink wolf" onclick="openCity(event, 'wolfAya')"><i class="fa fa-file-picture-o"></i></a></li>
+                    <li><a href="#" class="tablink wolf" onclick="openCity(event, 'wolfDesc')"><i class="fa fa-align-justify"></i></a></li>
+                </ul>
+
+                <div id="wolfAya" class="w3-container city">
+                    <img src="img/wolf.jpg" style="width:100%;">
+                    <img src="img/12_13.png" style="width:100%;">
+                </div>
+
+                <div id="wolfDesc" class="w3-container city">
+                    <h3 class="arabic-title">التفسير الميسر</h3>
+                    <p class="arabic-translation">قال يعقوب: إني لَيؤلم نفسي مفارقته لي إذا ذهبتم به إلى المراعي, وأخشى أن يأكله الذئب, وأنتم عنه غافلون منشغلون</p>
+                    <p class="arabic-translation">قال إخوة يوسف لوالدهم: لئن أكله الذئب, ونحن جماعة قوية إنا إذًا لخاسرون, لا خير فينا, ولا نفع يُرْجَى منا</p>
+                    <p class="arabic-translation">فأرْسَلَهُ معهم. فلما ذهبوا به وأجمعوا على إلقائه في جوف البئر, وأوحينا إلى يوسف لتخبرنَّ إخوتك مستقبلا بفعلهم هذا الذي فعلوه بك, وهم لا يُحِسُّون بذلك الأمر ولا يشعرون به</p>
+                    <p class="arabic-translation">وجاء إخوة يوسف إلى أبيهم في وقت العِشاء من أول الليل, يبكون ويظهرون الأسف والجزع</p>
+                    <p class="arabic-translation">قالوا: يا أبانا إنا ذهبنا نتسابق في الجَرْي والرمي بالسهام, وتركنا يوسف عند زادنا وثيابنا, فلم نقصِّر في حفظه, بل تركناه في مأمننا, وما فارقناه إلا وقتًا يسيرًا, فأكله الذئب, وما أنت بمصدِّق لنا ولو كنا موصوفين بالصدق; لشدة حبك ليوسف</p>
+                    <h3 class="foreign-title">English</h3>
+                    <p>He [Ya‘qûb (Jacob)] said: "Truly, it saddens me that you should take him away. I fear lest a wolf should devour him, while you are careless of him."</p>
+                    <p>They said: "If a wolf devours him, while we are a strong group (to guard him), then surely, we are the losers."</p>
+                    <p>So, when they took him away and they all agreed to throw him down to the bottom of the well, (they did so) and We revealed to him: "Indeed, you shall (one day) inform them of this their affair, when they know (you) not."</p>
+                    <p>And they came to their father in the early part of the night weeping</p>
+                    <p>They said: "O our father! We went racing with one another, and left Yûsuf (Joseph) by our belongings and a wolf devoured him; but you will never believe us even when we speak the truth."</p>
+                    <h3 class="foreign-title">Indonesian</h3>
+                    <p>Berkata Ya’qub; "Sesungguhnya kepergian kamu bersama Yusuf amat menyedihkanku dan aku khawatir kalau-kalau dia dimakan serigala, sedang kamu lengah daripadanya."</p>
+                    <p>Mereka berkata: "Jika ia benar-benar dimakan serigala, sedang kami golongan (yang kuat), sesungguhnya kami kalau demikian adalah orang-orang yang merugi." <sub>(1)</sub></p>
+                    <p>Maka tatkala mereka membawanya dan sepakat memasukkannya ke dasar sumur (lalu mereka masukkan dia), dan (di waktu dia sudah dalam sumur) kami wahyukan kepada Yusuf: "Sesungguhnya kamu akan menceritakan kepada mereka perbuatan mereka ini, sedang mereka tiada ingat lagi." </p>
+                    <p>Kemudian mereka datang kepada ayah mereka di sore hari sambil menangis</p>
+                    <p>Mereka berkata: "Wahai ayah kami, sesungguhnya kami pergi berlomba-lomba dan kami tinggalkan Yusuf di dekat barang-barang kami, lalu dia dimakan serigala, dan kamu sekali-kali tidak akan percaya kepada kami, sekalipun kami adalah orang-orang yang benar." </p>
+                    <p>(1)Maksudnya: menjadi orang-orang pengecut yang hidupnya tidak ada artinya</p>
+                </div>
+
+                <div class="w3-container w3-light-grey w3-padding">
+                    <button class="w3-btn w3-right w3-white w3-border" onclick="document.getElementById('wolf').style.display='none'">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Camel-->
+        <div id="camel" class="w3-modal">
+            <script src="js/media.js"></script>
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                <header class="w3-container w3-blue">
+                    <span onclick="document.getElementById('camel').style.display='none'" class="w3-closebtn w3-padding-top">&times;</span>
+
+                </header>
+
+                <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%;">
+                    <li><a href="#" class="tablink camel" onclick="openCity(event, 'camelAya')"><i class="fa fa-file-picture-o"></i></a></li>
+                    <li><a href="#" class="tablink camel" onclick="openCity(event, 'camelDesc')"><i class="fa fa-align-justify"></i></a></li>
+                </ul>
+
+                <div id="camelAya" class="w3-container city">
+                    <img src="img/camel.jpg" style="width:100%;">
+                    <img src="img/88_17.png" style="width:100%;">
+                </div>
+
+                <div id="camelDesc" class="w3-container city">
+                    <h3 class="arabic-title">التفسير الميسر</h3>
+                    <p class="arabic-translation">أفلا ينظر الكافرون المكذِّبون إلى الإبل: كيف خُلِقَت هذا الخلق العجيب؟</p>
+                    <h3 class="foreign-title">English</h3>
+                    <p>Do they not look at the camels, how they are created?</p>
+                    <h3 class="foreign-title">Indonesian</h3>
+                    <p>Sedang kehidupan akhirat adalah lebih baik dan lebih kekal</p>
+                </div>
+
+                <div class="w3-container w3-light-grey w3-padding">
+                    <button class="w3-btn w3-right w3-white w3-border" onclick="document.getElementById('camel').style.display='none'">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Snake-->
+        <div id="snake" class="w3-modal">
+            <script src="js/media.js"></script>
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                <header class="w3-container w3-blue">
+                    <span onclick="document.getElementById('snake').style.display='none'" class="w3-closebtn w3-padding-top">&times;</span>
+
+                </header>
+
+                <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%;">
+                    <li><a href="#" class="tablink snake" onclick="openCity(event, 'snakeAya')"><i class="fa fa-file-picture-o"></i></a></li>
+                    <li><a href="#" class="tablink snake" onclick="openCity(event, 'snakeDesc')"><i class="fa fa-align-justify"></i></a></li>
+                </ul>
+
+                <div id="snakeAya" class="w3-container city">
+                    <img src="img/snake.jpg" style="width:100%;">
+                    <img src="img/7_104.png" style="width:100%;">
+                </div>
+
+                <div id="snakeDesc" class="w3-container city">
+                    <h3 class="arabic-title">التفسير الميسر</h3>
+                    <p class="arabic-translation">وقال موسى لفرعون محاورًا مبلِّغًا: إني رسولٌ من الله خالق الخلق أجمعين, ومدبِّر أحوالهم ومآلهم</p>
+                    <p class="arabic-translation">جدير بأن لا أقول على الله إلا الحق, وحريٌّ بي أن ألتزمه, قد جئتكم ببرهان وحجة باهرة من ربكم على صِدْق ما أذكره لكم, فأطلق -يا فرعون- معي بني إسرائيل مِن أَسْرك وقَهْرك, وخلِّ سبيلهم لعبادة</p>
+                    <p class="arabic-translation">قال فرعرن لموسى: إن كنتَ جئتَ بآية حسب زعمك فأتني بها, وأحضرها عندي; لتصحَّ دعواك ويثبت صدقك, إن كنت صادقًا فيما ادَّعيت أنك رسول رب العالمين</p>
+                    <p class="arabic-translation">فألقى موسى عصاه, فتحولت حيَّة عظيمة ظاهرة للعيان</p>
+                    <h3 class="foreign-title">English</h3>
+                    <p>And Mûsâ (Moses) said: "O Fir‘aun (Pharaoh)! Verily, I am a Messenger from the Lord of the ‘Âlamîn (mankind, jinn and all that exists)</p>
+                    <p>"Proper it is for me that I say nothing concerning Allâh but the truth. Indeed I have come unto you from your Lord with a clear proof. So let the Children of Israel depart along with me."</p>
+                    <p>[Fir‘aun (Pharaoh)] said: "If you have come with a sign, show it forth, if you are one of those who tell the truth."</p>
+                    <p>Then [Mûsâ (Moses)] threw his stick and behold! it was a serpent, manifest!</p>
+                    <h3 class="foreign-title">Indonesian</h3>
+                    <p>Dan Musa berkata: "Hai Fir’aun, sesungguhnya aku ini adalah seorang utusan dari Tuhan semesta alam</p>
+                    <p>wajib atasku tidak mengatakan sesuatu terhadap Allah, kecuali yang hak. Sesungguhnya aku datang kepadamu dengan membawa bukti yang nyata dari Tuhanmu, maka lepaskanlah Bani Israil (pergi) bersama aku"</p>
+                    <p>Fir’aun menjawab: "Jika benar kamu membawa sesuatu bukti, maka datangkanlah bukti itu jika (betul) kamu termasuk orang-orang yang benar"</p>
+                    <p>Maka Musa menjatuhkan tongkatnya, lalu seketika itu juga tongkat itu menjadi ular yang sebenarnya</p>
+                </div>
+
+                <div class="w3-container w3-light-grey w3-padding">
+                    <button class="w3-btn w3-right w3-white w3-border" onclick="document.getElementById('snake').style.display='none'">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Swine-->
+        <div id="swine" class="w3-modal">
+            <script src="js/media.js"></script>
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                <header class="w3-container w3-blue">
+                    <span onclick="document.getElementById('swine').style.display='none'" class="w3-closebtn w3-padding-top">&times;</span>
+
+                </header>
+
+                <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%;">
+                    <li><a href="#" class="tablink swine" onclick="openCity(event, 'swineAya')"><i class="fa fa-file-picture-o"></i></a></li>
+                    <li><a href="#" class="tablink swine" onclick="openCity(event, 'swineDesc')"><i class="fa fa-align-justify"></i></a></li>
+                </ul>
+
+                <div id="swineAya" class="w3-container city">
+                    <img src="img/swine.jpg" style="width:100%;">
+                    <img src="img/2_173.png" style="width:100%;">
+                </div>
+
+                <div id="swineDesc" class="w3-container city">
+                    <h3 class="arabic-title">التفسير الميسر</h3>
+                    <p class="arabic-translation">إنما حرم الله عليكم ما يضركم كالميتة التي لم تذبح بطريقة شرعية, والدم المسفوح, ولحم الخنزير, والذبائح التي ذبحت لغير الله. ومِنْ فَضْلِ الله عليكم وتيسيره أنه أباح لكم أكل هذه المحرمات عند الضرورة. فمن ألجأته الضرورة إلى أكل شيء منها, غير ظالم في أكله فوق حاجته, ولا متجاوز حدود الله فيما أُبيح له, فلا ذنب عليه في ذلك. إن الله غفور لعباده, رحيم بهم</p>
+                    <h3 class="foreign-title">English</h3>
+                    <p>He has forbidden you only the Maitah (dead animals), and blood, and the flesh of swine, and that which is slaughtered as a sacrifice for others than Allâh (or has been slaughtered for idols, on which Allâh’s Name has not been mentioned while slaughtering). But if one is forced by necessity without wilful disobedience nor transgressing due limits, then there is no sin on him. Truly, Allâh is Oft-Forgiving, Most Merciful</p>
+                    <h3 class="foreign-title">Indonesian</h3>
+                    <p>Sesungguhnya Allah hanya mengharamkan bagimu bangkai, darah, daging babi dan binatang yang (ketika disembelih) disebut (nama) selain Allah. <sub>(1)</sub> Tetapi barangsiapa dalam keadaan terpaksa (memakannya) sedang ia tidak menginginkannya dan tidak (pula) melampaui batas, maka tidak ada dosa baginya. Sesungguhnya Allah Maha Pengampun lagi Maha Penyayang</p>
+                    <p>(1) Haram juga menurut ayat ini daging yang berasal dari sembelihan yang menyebut nama Allah tetapi disebut pula nama selain Allah</p>
+                </div>
+
+                <div class="w3-container w3-light-grey w3-padding">
+                    <button class="w3-btn w3-right w3-white w3-border" onclick="document.getElementById('swine').style.display='none'">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Dog-->
+        <div id="dog" class="w3-modal">
+            <script src="js/media.js"></script>
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                <header class="w3-container w3-blue">
+                    <span onclick="document.getElementById('dog').style.display='none'" class="w3-closebtn w3-padding-top">&times;</span>
+
+                </header>
+
+                <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%;">
+                    <li><a href="#" class="tablink dog" onclick="openCity(event, 'dogAya')"><i class="fa fa-file-picture-o"></i></a></li>
+                    <li><a href="#" class="tablink dog" onclick="openCity(event, 'dogDesc')"><i class="fa fa-align-justify"></i></a></li>
+                </ul>
+
+                <div id="dogAya" class="w3-container city">
+                    <img src="img/dog.jpg" style="width:100%;">
+                    <img src="img/7_176.png" style="width:100%;">
+                </div>
+
+                <div id="dogDesc" class="w3-container city">
+                    <h3 class="arabic-title">التفسير الميسر</h3>
+                    <p class="arabic-translation">ولو شئنا أن نرفع قدره بما آتيناه من الآيات لفعلنا, ولكنه رَكَنَ إلى الدنيا واتبع هواه, وآثر لَذَّاته وشهواته على الآخرة, وامتنع عن طاعة الله وخالف أمره. فَمَثَلُ هذا الرجل مثل الكلب, إن تطرده أو تتركه يُخْرج لسانه في الحالين لاهثًا, فكذلك الذي انسلخ من آيات الله يظل على كفره إن اجتهدْتَ في دعوتك له أو أهملته, هذا الوصف -أيها الرسول- وصف هؤلاء القوم الذين كانوا ضالين قبل أن تأتيهم بالهدى والرسالة, فاقصص -أيها الرسول- أخبار الأمم الماضية, ففي إخبارك بذلك أعظم معجزة, لعل قومك يتدبرون فيما جئتهم به فيؤمنوا لك</p>
+                    <h3 class="foreign-title">English</h3>
+                    <p>And had We willed, We would surely have elevated him therewith but he clung to the earth and followed his own vain desire. So his parable is the parable of a dog: if you drive him away, he lolls his tongue out, or if you leave him alone, he (still) lolls his tongue out. Such is the parable of the people who reject Our Ayât (proofs, evidence, verses, lessons, signs, revelations, etc.). So relate the stories, perhaps they may reflect</p>
+                    <h3 class="foreign-title">Indonesian</h3>
+                    <p>Dan kalau Kami menghendaki, sesungguhnya Kami tinggikan (derajat)nya dengan ayat-ayat itu, tetapi dia cenderung kepada dunia dan menurutkan hawa nafsunya yang rendah, maka perumpamaannya seperti anjing jika kamu menghalaunya diulurkannya lidahnya dan jika kamu membiarkannya dia mengulurkan lidahnya (juga). Demikian itulah perumpamaan orang-orang yang mendustakan ayat-ayat Kami. Maka ceritakanlah (kepada mereka) kisah-kisah itu agar mereka berfikir</p>
+                </div>
+
+                <div class="w3-container w3-light-grey w3-padding">
+                    <button class="w3-btn w3-right w3-white w3-border" onclick="document.getElementById('dog').style.display='none'">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Fly-->
+        <div id="fly" class="w3-modal">
+            <script src="js/media.js"></script>
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                <header class="w3-container w3-blue">
+                    <span onclick="document.getElementById('fly').style.display='none'" class="w3-closebtn w3-padding-top">&times;</span>
+
+                </header>
+
+                <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%;">
+                    <li><a href="#" class="tablink fly" onclick="openCity(event, 'flyAya')"><i class="fa fa-file-picture-o"></i></a></li>
+                    <li><a href="#" class="tablink fly" onclick="openCity(event, 'flyDesc')"><i class="fa fa-align-justify"></i></a></li>
+                </ul>
+
+                <div id="flyAya" class="w3-container city">
+                    <img src="img/fly.jpg" style="width:100%;">
+                    <img src="img/22_73.png" style="width:100%;">
+                </div>
+
+                <div id="flyDesc" class="w3-container city">
+                    <h3 class="arabic-title">التفسير الميسر</h3>
+                    <p class="arabic-translation">يا أيها الناس ضُرِب مثل فاستمعوا له وتدبروه: إن الأصنام والأنداد التي تعبدونها من دون الله لن تقدر مجتمعة على خَلْق ذبابة واحدة، فكيف بخلق ما هو أكبر؟ ولا تقدر أن تستخلص ما يسلبه الذباب منها، فهل بعد ذلك مِن عَجْز؟ فهما ضعيفان معًا: ضَعُفَ الطالب الذي هو المعبود من دون الله أن يستنقذ ما أخذه الذباب منه, وضَعُفَ المطلوب الذي هو الذباب، فكيف تُتَّخذ هذه الأصنام والأنداد آلهة, وهي بهذا الهوان؟</p>
+                    <h3 class="foreign-title">English</h3>
+                    <p>O mankind! A similitude has been coined, so listen to it (carefully): Verily those on whom you call besides Allâh, cannot create (even) a fly, even though they combine together for the purpose. And if the fly snatches away a thing from them, they will have no power to release it from the fly. So weak are (both) the seeker and the sought</p>
+                    <h3 class="foreign-title">Indonesian</h3>
+                    <p>Hai manusia, telah dibuat perumpamaan, maka dengarkanlah olehmu perumpamaan itu. Sesungguhnya segala yang kamu seru selain Allah sekali-kali tidak dapat menciptakan seekor lalatpun, walaupun mereka bersatu untuk menciptakannya. Dan jika lalat itu merampas sesuatu dari mereka, tiadalah mereka dapat merebutnya kembali dari lalat itu. Amat lemahlah yang menyembah dan amat lemah (pulalah) yang disembah</p>
+                </div>
+
+                <div class="w3-container w3-light-grey w3-padding">
+                    <button class="w3-btn w3-right w3-white w3-border" onclick="document.getElementById('fly').style.display='none'">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Mosquito-->
+        <div id="mosquito" class="w3-modal">
+            <script src="js/media.js"></script>
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                <header class="w3-container w3-blue">
+                    <span onclick="document.getElementById('mosquito').style.display='none'" class="w3-closebtn w3-padding-top">&times;</span>
+
+                </header>
+
+                <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%;">
+                    <li><a href="#" class="tablink mosquito" onclick="openCity(event, 'mosquitoAya')"><i class="fa fa-file-picture-o"></i></a></li>
+                    <li><a href="#" class="tablink mosquito" onclick="openCity(event, 'mosquitoDesc')"><i class="fa fa-align-justify"></i></a></li>
+                </ul>
+
+                <div id="mosquitoAya" class="w3-container city">
+                    <img src="img/mosquito.jpg" style="width:100%;">
+                    <img src="img/2_26.png" style="width:100%;">
+                </div>
+
+                <div id="mosquitoDesc" class="w3-container city">
+                    <h3 class="arabic-title">التفسير الميسر</h3>
+                    <p class="arabic-translation">إن الله تعالى لا يستحيي من الحق أن يذكر شيئًا ما, قلَّ أو كثر, ولو كان تمثيلا بأصغر شيء, كالبعوضة والذباب ونحو ذلك, مما ضربه الله مثلا لِعَجْز كل ما يُعْبَد من دون الله. فأما المؤمنون فيعلمون حكمة الله في التمثيل بالصغير والكبير من خلقه, وأما الكفار فَيَسْخرون ويقولون: ما مراد الله مِن ضَرْب المثل بهذه الحشرات الحقيرة؟ ويجيبهم الله بأن المراد هو الاختبار, وتمييز المؤمن من الكافر; لذلك يصرف الله بهذا المثل ناسًا كثيرين عن الحق لسخريتهم منه, ويوفق به غيرهم إلى مزيد من الإيمان والهداية. والله تعالى لا يظلم أحدًا; لأنه لا يَصْرِف عن الحق إلا الخارجين عن طاعته</p>
+                    <h3 class="foreign-title">English</h3>
+                    <p>Verily, Allâh is not ashamed to set forth a parable even of a mosquito or so much more when it is bigger (or less when it is smaller) than it. And as for those who believe, they know that it is the Truth from their Lord, but as for those who disbelieve, they say: "What did Allâh intend by this parable?" By it He misleads many, and many He guides thereby. And He misleads thereby only those who are Al-Fâsiqûn (the rebellious, disobedient to Allâh[2])</p>
+                    <h3 class="foreign-title">Indonesian</h3>
+                    <p>Sesungguhnya Allah tiada segan membuat perumpamaan berupa nyamuk atau yang lebih rendah dari itu <sub>(1)</sub> Adapun orang-orang yang beriman, maka mereka yakin bahwa perumpamaan itu benar dari Tuhan mereka, tetapi mereka yang kafir mengatakan: "Apakah maksud Allah menjadikan ini untuk perumpamaan?" Dengan perumpamaan itu banyak orang yang disesatkan Allah <sub>(2)</sub> dan dengan perumpamaan itu (pula) banyak orang yang diberi-Nya petunjuk. Dan tidak ada yang disesatkan Allah kecuali orang-orang yang fasik</p>
+                    <p>(1) Di waktu turunnya ayat 73 surat 22 Al Hajj yang di dalamnya Tuhan menerangkan bahwa berhala-berhala yang mereka sembah itu tidak dapat membuat lalat, sekalipun mereka kerjakan bersama-sama, dan turunnya ayat 41 surat Al `Ankabuut yang di dalamnya Tuhan menggambarkan kelemahan berhala-berhala yang dijadikan oleh orang-orang musyrik itu sebagai pelindung sama dengan lemahnya sarang laba-laba. </p>
+                    <p>(2) Disesatkan Allah berarti: bahwa orang itu sesat berhubung keingkarannya dan tidak mau memahami petunjuk-petunjuk Allah. Dalam ayat ini, karena mereka itu ingkar dan tidak mau memahami apa sebabnya Allah menjadikan nyamuk sebagai perumpamaan, maka mereka itu menjadi sesat.</p>
+                </div>
+
+                <div class="w3-container w3-light-grey w3-padding">
+                    <button class="w3-btn w3-right w3-white w3-border" onclick="document.getElementById('mosquito').style.display='none'">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Cow-->
+        <div id="cow" class="w3-modal">
+            <script src="js/media.js"></script>
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                <header class="w3-container w3-blue">
+                    <span onclick="document.getElementById('cow').style.display='none'" class="w3-closebtn w3-padding-top">&times;</span>
+
+                </header>
+
+                <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%;">
+                    <li><a href="#" class="tablink cow" onclick="openCity(event, 'cowAya')"><i class="fa fa-file-picture-o"></i></a></li>
+                    <li><a href="#" class="tablink cow" onclick="openCity(event, 'cowDesc')"><i class="fa fa-align-justify"></i></a></li>
+                </ul>
+
+                <div id="cowAya" class="w3-container city">
+                    <img src="img/cow.jpg" style="width:100%;">
+                    <img src="img/2_67.png" style="width:100%;">
+                </div>
+
+                <div id="cowDesc" class="w3-container city">
+                    <h3 class="arabic-title">التفسير الميسر</h3>
+                    <p class="arabic-translation">واذكروا يا بني إسرائيل جناية أسلافكم, وكثرة تعنتهم وجدالهم لموسى عليه الصلاة والسلام, حين قال لهم: إن الله يأمركم أن تذبحوا بقرة, فقالوا -مستكبرين-: أتجعلنا موضعًا للسخرية والاستخفاف؟ فردَّ عليهم موسى بقوله: أستجير بالله أن أكون من المستهزئين</p>
+                    <h3 class="foreign-title">English</h3>
+                    <p>And (remember) when Mûsâ (Moses) said to his people: "Verily, Allâh commands you that you slaughter a cow." They said, "Do you make fun of us?" He said, "I take Allâh’s Refuge from being among Al-Jâhilûn (the ignorant or the foolish)."</p>
+                    <h3 class="foreign-title">Indonesian</h3>
+                    <p>Dan (ingatlah), ketika Musa berkata kepada kaumnya: "Sesungguhnya Allah menyuruh kamu menyembelih seekor sapi betina". Mereka berkata: "Apakah kamu hendak menjadikan kami buah ejekan?" <sub>(1)</sub> Musa menjawab: "Aku berlindung kepada Allah agar tidak menjadi salah seorang dari orang-orang yang jahil"</p>
+                    <p>(1) Hikmah Allah menyuruh menyembelih sapi ialah supaya hilang rasa penghormatan mereka kepada sapi yang pernah mereka sembah</p>
+                </div>
+
+                <div class="w3-container w3-light-grey w3-padding">
+                    <button class="w3-btn w3-right w3-white w3-border" onclick="document.getElementById('cow').style.display='none'">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="id013" class="w3-modal">
+            <div class="w3-modal-content w3-card-8">
+                <header class="w3-container w3-teal">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn">&times;</span>
+                    <h2>Modal Header</h2>
+                </header>
+                <div class="w3-container">
+                    <p>You have two options to close this modal:</p>
+                    <p>Click on the "x" or click anywhere outside of the modal!</p>
+                </div>
+
+                <div class="w3-container w3-light-grey w3-padding">
+                    <button class="w3-btn w3-right w3-white w3-border" onclick="document.getElementById('cow').style.display='none'">Close</button>
+                </div>
+
+                <footer class="w3-container w3-teal">
+                    <p>Modal Footer</p>
+                </footer>
+            </div>
+        </div>
+
+        <!--Info dialog-->
+        <div id="infoModal" class="w3-modal">
+            <div class="w3-modal-content">
+                <header class="w3-container w3-teal">
+                    <span onclick="document.getElementById('infoModal').style.display='none';w3_close()" class="w3-closebtn">&times;</span>
+                    <h2><i class="fa fa-info-circle"></i></h2>
+                </header>
+                <div class="w3-container">
+                    <h3 class="arabic-title">عربي</h3>
+                    <p class="arabic-translation">تم الحصول على التفاسير والترجمات من موقع مجمع الملك فهد لطباعة المصحف الشريف</p>
+                    <a href="http://qurancomplex.gov.sa">http://qurancomplex.gov.sa</a>
+                    <h3 class="foreign-title">English</h3>
+                    <p>The interpretation and translations were quotes from King Fahd Complex For The Printing Of The Holy Quran</p>
+                    <a href="http://qurancomplex.gov.sa">http://qurancomplex.gov.sa</a>
+                    <h3 class="foreign-title">Indonesian</h3>
+                    <p>Interpretasi dan terjemahan yang kutipan dari King Fahd Complex Untuk Percetakan Of The Holy Quran</p>
+                    <a href="http://qurancomplex.gov.sa">http://qurancomplex.gov.sa</a>
+                </div>
+
+                <div class="w3-container w3-light-grey w3-padding">
+                    <button class="w3-btn w3-right w3-white w3-border" onclick="document.getElementById('infoModal').style.display='none';w3_close()">Close</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        //document.getElementsByClassName("tablink")[0].click();
+
+        function openModal(objType) {
+            document.getElementById(objType).style.display = 'block';
+            document.getElementsByClassName("tablink " + objType)[0].click();
+        }
+
+        function openCity(evt, cityName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].classList.remove("w3-light-grey");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.classList.add("w3-light-grey");
+
+            var c = document.getElementById(cityName).children;
+            document.getElementById(city + "_01")[0].click();
+            //document.getElementById("aaa").innerHTML = c[0];
+        }
+
+        function openInfoModal() {
+            document.getElementById('infoModal').style.display = 'block';
+        }
+
+        /*
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+   */
+        function w3_open() {
+            document.getElementById("main").style.marginLeft = "25%";
+            document.getElementById("mySidenav").style.width = "25%";
+            document.getElementById("mySidenav").style.display = "block";
+            document.getElementById("openNav").style.display = 'none';
+        }
+
+        function w3_close() {
+            document.getElementById("main").style.marginLeft = "0%";
+            document.getElementById("mySidenav").style.display = "none";
+            document.getElementById("openNav").style.display = "inline-block";
+        }
+    </script>
+
+</body>
+
+</html>

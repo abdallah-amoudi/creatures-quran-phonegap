@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CQ</title>
+    <meta http-equiv="Content-Security-Policy" content="style-src 'self' 'unsafe-inline'; media-src *"/>
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, width=device-width, height=device-height"/>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <!--<link rel="stylesheet" href="css/ratchet.css"/>-->
+    <link rel="stylesheet" href="css/theme.css"/>
+    <link rel="stylesheet" href="css/compass.css"/>      
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+    <!--
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    -->
+      
+    <script src="cordova.js"></script>
+    <!--<script src="js/ratchet.js"></script>-->
+    <script src="js/zepto.js"></script>
+    <script src="js/statusbar.js"></script>           
+<!--
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+-->
+  </head>
+  <body ontouchstart="">
+      <!--
+    <header class="bar bar-nav">
+      <h1 class="title">Creatures In Quran</h1>
+    </header>  
+      -->
+
+<!-- navigation sidebar-->   
+      <!--
+<div class="w3-container w3-teal">
+  <span class="w3-opennav w3-xlarge" onclick="w3_open()" id="openNav">&#9776;</span>
+</div>
+-->
+      
+<div data-role="page" id="pageone">
+    <div class="w3-container w3-teal">
+  <span class="w3-opennav w3-xlarge" onclick="w3_open()" id="openNav">&#9776;</span>
+</div>
+    
+
+
+    <!--
+  <div data-role="main" class="ui-content">
+    <p>Click on the link to see turn effect.</p>
+    <a href="#pagetwo" data-transition="turn">Turn to Page Two</a>
+  </div>
+-->
+    
+
+
+</div>      
+
+     
+
+      
+<nav class="w3-sidenav w3-white w3-card-2" style="display:none" id="mySidenav">
+  <a href="javascript:void(0)"
+  onclick="w3_close()"
+  class="w3-closenav w3-large">Close &times;</a>
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+  <a href="#">Link 3</a>
+  <a href="#">القائــمة</a>    
+  <a href="#">امثلة</a>     
+</nav>
+
+<div id="main">
+
+<div class="w3-row-padding w3-margin-top" >
+    <div class="w3-third" style="width:33%">
+    <div class="w3-card-2">
+    <img src="img/horse.jpg" style="width:100%;" onclick="openModal('horse')">
+    <div class="w3-container">
+    <h4></h4>
+    </div>
+    </div>
+    </div>
+
+    <div class="w3-third" style="width:33%">
+    <div class="w3-card-2">
+    <img src="img/spider.jpg" style="width:100%" onclick="openModal('spider')">
+    <div class="w3-container">
+    <h4></h4>
+    </div>
+    </div>
+    </div>
+
+    <div class="w3-third" style="width:33%">
+    <div class="w3-card-2">
+    <img src="img/fanos.jpg" style="width:100%">
+    <div class="w3-container">
+    <h4></h4>
+    </div>
+    </div>
+    </div> 
+    
+    <div class="w3-third" style="width:33%">
+    <div class="w3-card-2">
+    <img src="img/fanos.jpg" style="width:100%">
+    <div class="w3-container">
+    <h4></h4>
+    </div>
+    </div>
+    </div> 
+    
+    <div class="w3-third" style="width:33%">
+    <div class="w3-card-2">
+    <img src="img/crow.jpg" style="width:100%">
+    <div class="w3-container">
+    <h4></h4>
+    </div>
+    </div>
+    </div>    
+    
+    <div class="w3-third" style="width:33%">
+    <div class="w3-card-2">
+    <img src="img/spider.jpg" style="width:100%" onclick="openModal('spider')">
+    <div class="w3-container">
+    <h4></h4>
+    </div>
+    </div>
+    </div>
+        
+</div> 
+    
+    
+<div class="w3-row-padding w3-margin-top" >
+    <div class="w3-third" style="width:33%">
+    <div class="w3-card-2">
+    <img src="img/horse.jpg" style="width:100%;" onclick="openModal('horse')">
+    <div class="w3-container">
+    <h4></h4>
+    </div>
+    </div>
+    </div>
+
+    <div class="w3-third" style="width:33%">
+    <div class="w3-card-2">
+    <img src="img/spider.jpg" style="width:100%" onclick="openModal('spider')">
+    <div class="w3-container">
+    <h4></h4>
+    </div>
+    </div>
+    </div>
+
+    <div class="w3-third" style="width:33%">
+    <div class="w3-card-2">
+    <img src="img/fanos.jpg" style="width:100%">
+    <div class="w3-container">
+    <h4></h4>
+    </div>
+    </div>
+    </div>     
+</div>
+    
+<div class="w3-row-padding w3-margin-top" >
+    <div class="w3-third" style="width:33%">
+    <div class="w3-card-2">
+    <img src="img/fanos.jpg" style="width:100%">
+    <div class="w3-container">
+    <h4></h4>
+    </div>
+    </div>
+    </div>  
+    
+    <div class="w3-third" style="width:33%">
+    <div class="w3-card-2">
+    <img src="img/horse.jpg" style="width:100%;" onclick="openModal('horse')">
+    <div class="w3-container">
+    <h4></h4>
+    </div>
+    </div>
+    </div>   
+    
+    <div class="w3-third" style="width:33%">
+    <div class="w3-card-2">
+    <img src="img/spider.jpg" style="width:100%" onclick="openModal('spider')">
+    <div class="w3-container">
+    <h4></h4>
+    </div>
+    </div>
+    </div>    
+</div>    
+    
+<div class="w3-row-padding w3-margin-top" >
+    
+    <div class="w3-card-2">
+    <img src="img/horse.jpg" style="width:33%;" onclick="openModal('horse')">
+    <div class="w3-container">
+    <h4></h4>
+    </div>
+    </div>
+   
+
+  
+    <div class="w3-card-2">
+    <img src="img/spider.jpg" style="width:33%" onclick="openModal('spider')">
+    <div class="w3-container">
+    <h4></h4>
+    </div>
+    </div>
+    
+
+    
+    <div class="w3-card-2">
+    <img src="img/fanos.jpg" style="width:33%">
+    <div class="w3-container">
+    <h4></h4>
+    </div>
+    </div>
+    
+</div>
+
+<!--Horse-->
+<div id="horse" class="w3-modal">
+ <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+  <header class="w3-container w3-blue">
+   <span onclick="document.getElementById('horse').style.display='none'"
+   class="w3-closebtn w3-padding-top">&times;</span>
+   <h2>Header</h2>
+  </header>
+
+  <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%;">
+   <li><a id="horse_01" href="#" class="tablink horse" onclick="openCity(event, 'horseAya2')">(1)<i class="glyphicon glyphicon-home"></i></a></li>
+   <li><a href="#" class="tablink horse" onclick="openCity(event, 'horseDesc2')">Explain</a></li>   
+   <li><a href="#" class="tablink horse" onclick="openCity(event, 'horseAya')">(2)<i class="glyphicon glyphicon-home"></i></a></li>
+   <li><a href="#" class="tablink horse" onclick="openCity(event, 'horseDesc')">Explain</a></li>         
+  </ul>
+
+<div id="horseAya2" class="w3-container city"> 
+      <img src="img/8_60.png" style="width:100%; height: 50%;">
+      <h1 class="aya">65432</h1>
+    <h1 id="aaa">...</h1>
+      <!--
+   <h1 class="aya">وَأَعِدُّوا لَهُم مَّا اسْتَطَعْتُم مِّن قُوَّةٍ وَمِن رِّبَاطِ <b style="color:red;">الْخَيْلِ</b> تُرْهِبُونَ بِهِ عَدُوَّ اللَّهِ وَعَدُوَّكُمْ وَآخَرِينَ مِن دُونِهِمْ لَا تَعْلَمُونَهُمُ اللَّهُ يَعْلَمُهُمْ ۚ وَمَا تُنفِقُوا مِن شَيْءٍ فِي سَبِيلِ اللَّهِ يُوَفَّ إِلَيْكُمْ وَأَنتُمْ لَا تُظْلَمُونَ</h1>
+-->
+  </div>
+
+  <div id="horseDesc2" class="w3-container city">
+   <h1>Paris</h1>
+   <p>Paris is the capital of France.</p>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+     
+     
+  <div id="horseAya" class="w3-container city"> 
+      <img src="img/08-60_new.png" style="width:100%; height: 50%;">
+      <h1 class="aya">65432</h1>
+      <!--
+   <h1 class="aya">وَأَعِدُّوا لَهُم مَّا اسْتَطَعْتُم مِّن قُوَّةٍ وَمِن رِّبَاطِ <b style="color:red;">الْخَيْلِ</b> تُرْهِبُونَ بِهِ عَدُوَّ اللَّهِ وَعَدُوَّكُمْ وَآخَرِينَ مِن دُونِهِمْ لَا تَعْلَمُونَهُمُ اللَّهُ يَعْلَمُهُمْ ۚ وَمَا تُنفِقُوا مِن شَيْءٍ فِي سَبِيلِ اللَّهِ يُوَفَّ إِلَيْكُمْ وَأَنتُمْ لَا تُظْلَمُونَ</h1>
+-->
+<i class="glyphicon glyphicon-home"></i> Home
+  </div>
+
+  <div id="horseDesc" class="w3-container city">
+   <h1>Paris</h1>
+   <p>Paris is the capital of France.</p>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+
+  <div class="w3-container w3-light-grey w3-padding">
+   <button class="w3-btn w3-right w3-white w3-border"
+   onclick="document.getElementById('horse').style.display='none'">Close</button>
+  </div>
+ </div>
+</div>    
+    
+<!--Spider-->    
+<div id="spider" class="w3-modal">
+ <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+  <header class="w3-container w3-blue">
+   <span onclick="document.getElementById('spider').style.display='none'"
+   class="w3-closebtn w3-padding-top">&times;</span>
+   <h2>Header</h2>
+  </header>
+
+  <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%;">
+      <li><a id="spider_01" href="#" class="tablink spider" onclick="openCity(event, 'spiderAya')">London <i class="glyphicon glyphicon-home"></i></a></li>
+      <li><a href="#" class="tablink  spider" onclick="openCity(event, 'spiderDesc')">Paris</a></li>
+  </ul>
+
+  <div id="spiderAya" class="w3-container city">
+      <h1 class="aya">مَثَلُ الَّذِينَ اتَّخَذُوا مِن دُونِ اللَّهِ أَوْلِيَاءَ كَمَثَلِ <b style="color:red;">الْعَنكَبُوتِ</b> اتَّخَذَتْ بَيْتًا ۖ وَإِنَّ أَوْهَنَ الْبُيُوتِ لَبَيْتُ الْعَنكَبُوتِ ۖ لَوْ كَانُوا يَعْلَمُونَ</h1>
+<i class="glyphicon glyphicon-home"></i> Home
+  </div>
+
+  <div id="spiderDesc" class="w3-container city">
+   <h1>Paris</h1>
+   <p>Paris is the capital of France.</p>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+
+  <div class="w3-container w3-light-grey w3-padding">
+   <button class="w3-btn w3-right w3-white w3-border"
+   onclick="document.getElementById('spider').style.display='none'">Close</button>
+  </div>
+ </div>
+</div>      
+    
+<div id="id013" class="w3-modal">
+  <div class="w3-modal-content w3-card-8">
+    <header class="w3-container w3-teal">
+      <span onclick="document.getElementById('id01').style.display='none'"
+      class="w3-closebtn">&times;</span>
+      <h2>Modal Header</h2>
+    </header>
+    <div class="w3-container">
+      <p>You have two options to close this modal:</p>
+      <p>Click on the "x" or click anywhere outside of the modal!</p>
+    </div>
+    <footer class="w3-container w3-teal">
+      <p>Modal Footer</p>
+    </footer>
+  </div>
+</div> 
+    
+<div id="id02" class="w3-modal">
+<div class="w3-card-12">
+  <img src="img/img_fjords.jpg" alt="Norway">
+  <div class="w3-container w3-center">
+    <p class="aya">وَتَحْسَبُهُمْ أَيْقَاظًا وَهُمْ رُقُودٌ ۚ وَنُقَلِّبُهُمْ ذَاتَ الْيَمِينِ وَذَاتَ الشِّمَالِ ۖ <b style="color:red;">وَكَلْبُهُم</b> بَاسِطٌ  ذِرَاعَيْهِ بِالْوَصِيدِ ۚ لَوِ اطَّلَعْتَ عَلَيْهِمْ لَوَلَّيْتَ مِنْهُمْ فِرَارًا وَلَمُلِئْتَ  مِنْهُمْ رُعْبًا</p>      
+
+  </div>
+<div>
+    <audio controls>
+        <source src="01.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>      
+    <button id="explainBtn" onclick="document.getElementById('id01').style.display='block'" class="w3-btn">شرح</button>
+</div>    
+</div>    
+    
+</div>
+
+
+
+   
+    
+
+<div id="id02553353" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn">&times;</span>
+      <p>6- تاريخ التوزيع : سيتم إعتباراً من تاريخ يوم الخميس 29 ذو القعدة 1437هـ الموافق 1 سبتمبر 2016م البدء في صرف وتوزيع هذه الأرباح وذلك بقيدها بالحسابات البنكية العائدة لمساهمي البنك المربوطة محافظهم الإستثمارية خلالها، أما بالنسبة للمساهمين الذين لا تتوافر بيانات حساباتهم أو لم تكن مكتملة فيمكنهم مراجعة أقرب فرع من فروع البنك السعودي البريطاني (ساب) أو التواصل مع وحدة شئون المساهمين على الهاتف 2764140 011 لتحديث بياناتهم وترتيب عملية إستلام مستحقاتهم.
+
+ويود البنك أن يلفت عناية السادة المستثمرين الأجانب غير المقيمين إلى أن التوزيعات النقدية التي يتم تحويلها عن طريق الوسيط المالي المقيم تخضع عند تحويلها أو قيدها في حسابه البنكي لضريبة الاستقطاع بنسبة 5% طبقاً لأحكام المادة (68) من نظام ضريبة الدخل والمادة (63) من لائحته التنفيذية.</p>      
+    </div>
+  </div>
+</div>
+
+<!--
+<img src="img/img_car.jpg" alt="Car" style="width:100%">
+
+<div class="w3-card-4">
+  <p class="aya">وَتَحْسَبُهُمْ أَيْقَاظًا وَهُمْ رُقُودٌ ۚ وَنُقَلِّبُهُمْ ذَاتَ الْيَمِينِ وَذَاتَ الشِّمَالِ ۖ وَكَلْبُهُم بَاسِطٌ  ذِرَاعَيْهِ بِالْوَصِيدِ ۚ لَوِ اطَّلَعْتَ عَلَيْهِمْ لَوَلَّيْتَ مِنْهُمْ فِرَارًا وَلَمُلِئْتَ  مِنْهُمْ رُعْبًا</p>
+
+        
+</div>
+  -->  
+    
+<!--    
+<div class="w3-card-4">
+    <div class="w3-container">
+  <p class="aya">وَتَحْسَبُهُمْ أَيْقَاظًا وَهُمْ رُقُودٌ ۚ وَنُقَلِّبُهُمْ ذَاتَ الْيَمِينِ وَذَاتَ الشِّمَالِ ۖ وَكَلْبُهُم بَاسِطٌ  ذِرَاعَيْهِ بِالْوَصِيدِ ۚ لَوِ اطَّلَعْتَ عَلَيْهِمْ لَوَلَّيْتَ مِنْهُمْ فِرَارًا وَلَمُلِئْتَ  مِنْهُمْ رُعْبًا</p>      
+</div>
+-->    
+ 
+</div>    
+
+
+
+
+      
+
+      
+<script>
+//document.getElementsByClassName("tablink")[0].click();
+
+function openModal(objType){
+    document.getElementById(objType).style.display='block';
+    document.getElementsByClassName("tablink "+objType)[0].click();
+}
+
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].classList.remove("w3-light-grey");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.classList.add("w3-light-grey");
+    
+  var c = document.getElementById(cityName).children;
+   document.getElementById(city+"_01")[0].click();  
+    //document.getElementById("aaa").innerHTML = c[0];
+}
+
+    /*
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+   */ 
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidenav").style.width = "25%";
+  document.getElementById("mySidenav").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidenav").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+      
+  </body>  
+</html>
